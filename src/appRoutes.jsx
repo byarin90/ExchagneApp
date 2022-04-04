@@ -9,8 +9,7 @@ export default function AppRoutes(props) {
   const [options,setOptions] = useState([])
   const [val1,setVal1] = useState({})
   const [val2,setVal2] = useState({})
-
-
+  const [input,setInput] =useState(1)
   useEffect(()=>{
     doApi()
 
@@ -28,23 +27,20 @@ export default function AppRoutes(props) {
 
     setOptions(temp_ar)
     
-  let usd = options.find(item=>{
-    return item.label == 'USD'
-  })
+  let usd = temp_ar[149]
+  let ils = temp_ar[64]
 
-  let ils = options.find(item=>{
-    return item.label == 'ILS'
-  })
     setVal1(usd)
     setVal2(ils)
+
   }
   return (
     <BrowserRouter >
     <AppContext.Provider value={{
       options,
       val1,setVal1,
-      val2,setVal2
-    }}>
+      val2,setVal2,
+      input,setInput    }}>
       <Routes>
         
           <Route index element={<ExchangeApp />} />
