@@ -1,5 +1,5 @@
 import React from 'react'
-import {} from 'react-icons'
+import { } from 'react-icons'
 export default function InputEX() {
   return (
     <div className='col-md-5 d-flex justify-content-center  p-5 inputEX'>
@@ -12,6 +12,7 @@ export default function InputEX() {
         </div>
         <h4 className='text-center my-5'>USD</h4>
         <div>
+          
         </div>
         <h4 className='text-center my-5'>USD</h4>
         <div className='d-flex align-items-center'>
