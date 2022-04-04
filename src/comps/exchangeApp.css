@@ -1,0 +1,28 @@
+.strip {
+    background-image: url('https://paxforex.org/sites/default/files/how_to_profit_from_currency_trends_in_forex.jpeg');
+    min-height: 30vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputEX {
+    min-height: 70vh;
+    background: #4E4C67;
+}
+
+.scoreEX {
+    min-height: 70vh;
+    background: #A6B1E1;
+}
+
+@media screen and (max-width: 900px) {
+    .inputEX {
+        min-height: 48vh;
+    }
+    .scoreEX {
+        min-height: 22vh;
+    }
+}

@@ -6,7 +6,7 @@ import AppRoutes from './appRoutes';
 
 function App() {
   return (
-    <React.Fragment>
+    <React.Fragment >
      <AppRoutes />
     </React.Fragment>
   );
