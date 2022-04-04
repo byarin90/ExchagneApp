@@ -20,15 +20,15 @@ export default function AppRoutes(props) {
     let temp_ar = [];
     for (const key in data.data) {
       temp_ar.push({
-        label:key,
-        value:data.data[key]
+        label:data.data[key].code,
+        value:data.data[key].value
       })
     }
 
     setOptions(temp_ar)
     
-  let usd = temp_ar[149]
-  let ils = temp_ar[64]
+  let usd = temp_ar[140]
+  let ils = temp_ar[60]
 
     setVal1(usd)
     setVal2(ils)
