@@ -8,17 +8,20 @@
     align-items: center;
 }
 
+.AppEX {
+    background: rgb(166, 177, 225);
+    background: linear-gradient(0deg, rgba(166, 177, 225, 1) 0%, rgba(60, 155, 161, 1) 34%, rgba(29, 29, 97, 1) 58%, rgba(10, 10, 32, 1) 78%, rgba(10, 43, 10, 1) 93%, rgba(0, 0, 0, 0.8379726890756303) 96%);
+}
+
 .inputEX {
     min-height: 70vh;
-    background: #4E4C67;
 }
 
 .scoreEX {
     min-height: 70vh;
-    background: #A6B1E1;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 767px) {
     .inputEX {
         min-height: 48vh;
     }
