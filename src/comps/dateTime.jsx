@@ -13,8 +13,8 @@ export default function DateTime() {
   
   return (
     <div className='text-white my-4'>
-        <h2 >{time[0]}</h2>
-        <h2>{time[1]}</h2>
+        <h2 className='display-6'>{time[0]}</h2>
+        <h2 className='display-6'>{time[1]}</h2>
     </div>
   )
 }

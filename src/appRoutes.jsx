@@ -16,12 +16,12 @@ export default function AppRoutes(props) {
   },[])
 
   const doApi = async() =>{
-    const {data} = await axios.get(`http://apilayer.net/api/live?access_key=3c81786f9b3d2e267f40d08af97b97f2`);
+    const {data} = await axios.get(`https://api.currencyapi.com/v3/latest?apikey=NbbpumvdAKSl0lPezOrOAic8hxsWw31dhU1seHdi`);
     let temp_ar = [];
-    for (const key in data.quotes) {
+    for (const key in data.data) {
       temp_ar.push({
-        label:key.slice(3),
-        value:data.quotes[key]
+        label:key,
+        value:data.data[key]
       })
     }
 
