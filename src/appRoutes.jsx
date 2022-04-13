@@ -12,7 +12,7 @@ export default function AppRoutes(props) {
   const [input,setInput] =useState(1)
   useEffect(()=>{
     doApi()
-
+   
   },[])
 
   const doApi = async() =>{
@@ -24,15 +24,14 @@ export default function AppRoutes(props) {
         value:data.data[key].value
       })
     }
+    console.log(temp_ar)
 
     setOptions(temp_ar)
     
   let usd = temp_ar[140]
   let ils = temp_ar[60]
-
     setVal1(usd)
     setVal2(ils)
-
   }
   return (
     <BrowserRouter >
@@ -41,8 +40,8 @@ export default function AppRoutes(props) {
       val1,setVal1,
       val2,setVal2,
       input,setInput    }}>
+
       <Routes>
-        
           <Route index element={<ExchangeApp />} />
           <Route path="/*" element={<Page404 />} />
       </Routes>
